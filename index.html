@@ -1,22 +1,67 @@
 <img src="https://s03.s3c.es/imag/_v0/770x420/b/4/b/Nuevo-Logo-1.jpg" width="200"
      height="100">
 <h1>08MBID - Visualización de Datos </h1>
-<h2>Actividad Guiada 2 - AG2 </h2>
+<h2>Trabajo Práctico- Visualizaciones gráficas</h2>
 <b>Nombre: </b> Cristina Flores </br>
-<b>URL: </b> <a href="https://js-5wt2xp.stackblitz.io"> https://js-5wt2xp.stackblitz.io </a> </br>
+<b>URL: </b> <a href="https://js-8xrety.stackblitz.io"> https://js-8xrety.stackblitz.io </a> </br>
 <b>GitHub: </b> <a href="https://github.com/cmfloresu/"> https://github.com/cmfloresu/ </a></br>
 
-<h2>Gráficos generados en PoweBI</h2> 
-Los siguientes gráficos corresponden al analisis de un datsaset, sobre la recaudación de peliculas, por distribuidor y gènero. </br> 
+<h2>1.	Descripción del problema  </h2> 
+<p> CORP COURRIER AUSTRO es una empresa ecuatoriana dedicada al envío y recepción de paquetería, tiene agencias distribuidas en todo país y cuenta con agencias ubicadas en algunos estados en EEUU, su principal flujo es entre las diferentes provincias del Ecuador y los estados de New York, New jersey, Delaware, Pensilvania, entre otras.  En el Ecuador cuenta con 60 agencias, y el EUU cuenta con 30.
+En los últimos años la empresa ha notado cambios en el flujo de envíos y recepciones, consecuencia de la pandemia y la alta migración que ha incrementado en el último año, es por ello que el gerente desea conocer como ha sido el comportamiento de su negocio en los últimos años, considerando en base de ello tomar decisiones que permita que el negocio se expanda dentro y fuera del país. </p>
+<h2>2. Objetivos </h2> 
+<ul>
 
-<iframe title="AG2-" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=cb64ab27-daa4-4c02-ad1a-84c052eb125b&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+<li>Identificar el comportamiento actual del negocio, con el fin de estudiar la necesidad de incremento de nuevas agencias y servicios dentro y fuera del pais.</li>
+<li>Conocer los productos con mayor demanda de envío, con el fin de aplicar estrategias promocionales que permitan un incremento en la facturación, en aquellas agencias que se denota una disminución de envíos al extranjero.  </li>
+</ul>  
+<h2> 3.	Fuente de datos</h2>
+<p>Los datos extraídos corresponden a la base de datos de la empresa CORP COURRIER AUSTRO, para fines didácticos se utilizaron los datos a partir del año 2018.  En base a los objetivos planteados se realizó el proceso ETL, el mismo que fue desarrollado en la materia de MINERIA DE DATOS, se procedió inicialmente a un análisis exploratorio de los datos en el cuál se determinó un número de 1008609 registros, se procedió con el proceso de limpieza y transformación</p>
+
+<h2>5.	Análisis de los datos para la toma de decisiones:</h2>
+<h3>5.1.	Identificar el comportamiento actual del negocio, con el fin de estudiar la necesidad de incremento de nuevas agencias y servicios dentro y fuera del país. </h3>
+<p>A continuación, se desprende un análisis exploratorio de los datos, con el objeto de identificar las 10 agencias con mayor facturación en los años 2018-2022. </p>
+<iframe title="Deber" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ade65bab-3e20-48ad-9799-e2070ff49739&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+
+Se puede apreciar en el gráfico que la agencia matriz es la que mayores ingresos ha tenido en los último 5 años, le siguen dos agencias ubicadas al norte del país y   así también se identifica que las ocho agencias restantes pertenecen al austro ecuatoriano, un aspecto importante a considerar es que las agencias que corresponden al top 10, se encuentran en cantones identificados con un alto nivel de migración. 
 </br>
 
+<h4> Relación del valor facturado y peso enviado por año</h4>
+<p>Para gerencia es importante conocer cómo ha ido evolucionando el nivel de facturación y peso enviado por parte de las diferentes agencias, a continuación, se detalla es siguiente gráfico que permite visualizar la tendencia que ha surgido en los últimos años. </p>
+<p>Así como es importante ver la tendencia a lo largo del tiempo, también lo es visualizar la relación entre el peso y el valor facturado por cada agencia, en un año determinado, por ello en base al filtro por año se puede observar esta relación. </p>
+</br>
+<iframe title="DeberPesoEnvioYFacturacion" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=9666bbec-4354-45ff-8b0a-4ed41665712e&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
 
-<h2>DASHBOARD</h2> 
-Adicionalmente se generó un Dashboard que permite relacionar los gráficos generados </br> 
 
-<iframe title="AG2-" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=cb64ab27-daa4-4c02-ad1a-84c052eb125b&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+<p>
+Como se puede observar en el gráfico, tanto el peso enviado como el valor facturado ha tenido un repunte en el año 2021, año en el cual se dio un alto grado de migración en el país, se puede observar en el año 2022 una reducción de valores, pero eso debido que se cuenta con la información del primer trimestre. Este amplio incremento es el que conduce a gerencia a tomar en consideración ampliar sus agencias o ampliar los servicios que ofrece </p>
+
+<h4>Relación entre agencias de envío y agencias de Destino</h4>
+<p>El gerente considera importante conocer como las agencias de destino están funcionado con relación a las agencias ubicadas en el Ecuador, pues es importante conocer en primera instancia la rentabilidad de estas agencias en el extranjero, a su vez que cada agente responsable identifique cuál es su nicho objetivo, lo que conlleva a la aplicación de promociones, difusión e servicios o la innovación de los servicios actuales. </p>
+
+<iframe title="RelacionEnvioFacturacion" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=e7bef8bc-1312-4b07-9da5-408e1c0d6767&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
 </br>
 
+En primera instancia se puede visualizar de manera georreferenciada, la ubicación de las agencias de destino que se relacionan con las agencias de envío ubicadas en el Ecuador, se puede identificar mediante la integración 
+
+<h4>Total Facturado por provincia</h4>
+<p>Así también es importante conocer el nivel de facturación por provincia, con el fin de establecer estratégicas que permitan a la empresa mejorar el nivel de facturación en aquellas provincias que se evidencia una facturación muy baja. Se ha tomado como referencia los datos generados desde el año 2018, hasta marzo del 2022. </p>
+
+<iframe title="Facturación total por Provincia" aria-label="Map" id="datawrapper-chart-RgH2A" src="https://datawrapper.dwcdn.net/RgH2A/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="622"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+</br>
+<p>Se puede observar claramente que la provincia del Azuay es la que más ha facturado en los últimos 5 años, pero hay que considerar que existen provincias que tienen mayor número de agencias, ubicadas en diferentes cantones, por lo cual se torna importante considerar además el N. agencias para determinar un índice más exacto de rentabilidad.</p>
+
+<iframe title="Facturación promedio por provincia" aria-label="Map" id="datawrapper-chart-HbJG7" src="https://datawrapper.dwcdn.net/HbJG7/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="606"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+</br>
+<p> Se puede evidenciar que con la facturación promedio, la provincia del Cañar es la que más ha facturado en el periodo estudiado, además se evidencia que existe una baja facturación en los cantones perteneciente al oriente ecuatoriano.</p>
+
+<h3>5.2.	Conocer los productos con mayor demanda de envío, con el fin de aplicar estrategias promocionales que permitan un incremento en la facturación, en aquellas agencias que se denota una disminución de envíos al extranjero.  </h3>
+
+<p>A continuación, se desprende un análisis exploratorio de los datos, con el objeto de identificar los 10 artículos que son enviados con mayor facturación. 
+Además para gerencia es importante conocer los productos que están generando mayor recaudación en cada una de sus agencias, con el fin de plantear estrategias promocionales que permitan incrementar el nivel de facturación en ciertas agencias.</p>
+
+<iframe title="productosfacturados" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=080e8979-8853-4f83-a7fb-20e93cd8cea3&groupId=9062b002-4e11-4008-bb40-32eff25f7562&autoAuth=true&ctid=7ef32de5-906b-4cc3-9292-fb130a69fdec&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+</br>
+
+<p>Los resultados visualizados corresponden al total de agencias de envío, en un periodo de tiempo de 5 años, desde el año 2018 hasta marzo del 2022. Se torna necesario además poder filtrar por cada año y agencia con el fin del discriminar el comportamiento de los artículos por estas características, ya que en cada agencia el comportamiento es diferente, sobre todo en aquellas agencias cuya facturación es baja </p>
 
